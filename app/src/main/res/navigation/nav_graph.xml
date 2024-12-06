@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registration">
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.example.nav1.Registration"
+        android:label="Registration">
+        <action
+            android:id="@+id/action_registration_to_details2"
+            app:destination="@id/details" />
+    </fragment>
+    <fragment
+        android:id="@+id/details"
+        android:name="com.example.nav1.Details"
+        android:label="Details">
+        <argument
+            android:name="MAXXX"
+            app:argType="com.example.nav1.User"/>
+    </fragment>
+</navigation>
